@@ -6,7 +6,7 @@ package my.design.patterns.structural.decorator;
 public class BorderDecorator extends Decorator {
 
     BorderDecorator(VisualComponent c, int width) {
-        super.component = c;
+        super(c);
     }
 
     public void draw() {

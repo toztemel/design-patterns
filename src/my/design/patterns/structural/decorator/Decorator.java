@@ -7,6 +7,10 @@ public class Decorator implements VisualComponent {
 
     VisualComponent component;
 
+    public Decorator(VisualComponent c) {
+        this.component = c;
+    }
+
     @Override
     public void draw() {
         component.draw();
